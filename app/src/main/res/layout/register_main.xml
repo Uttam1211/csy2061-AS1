@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgsignup"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="81dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/modifiedicon"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35pt"
+        android:layout_marginHorizontal="15pt"
+        app:cardCornerRadius="35dp"
+        android:background="@color/white"
+        app:cardElevation="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/dashboardTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textView_title_signup"
+                android:fontFamily="@font/spotlight_typewriting"
+                android:textAlignment="center"
+                android:letterSpacing="0.1"
+                android:textColor="@color/red"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtNameSigup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:autofillHints="emailAddress"
+                android:background="@drawable/custom_edit"
+                android:drawableStart="@drawable/ic_baseline_drive_file_rename_outline_24"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/special_elite"
+                android:hint="@string/name_prompt"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/txtEmail_signup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="emailAddress"
+                android:background="@drawable/custom_edit"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/special_elite"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/txtPhoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="Phone Number"
+                android:background="@drawable/custom_edit"
+                android:drawableStart="@drawable/ic_baseline_contact_phone_24"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/special_elite"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"/>
+
+            <EditText
+                android:id="@+id/dob_picker"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="dd/mm/yyyy"
+                android:background="@drawable/custom_edit"
+                android:drawableStart="@drawable/ic_baseline_drive_file_rename_outline_24"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/special_elite"
+                android:hint="@string/date"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="date"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"/>
+
+            <EditText
+                android:id="@+id/txtPasswordSignup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="password"
+                android:background="@drawable/custom_edit"
+                android:drawableStart="@drawable/ic_baseline_password_24"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/special_elite"
+                android:hint="@string/password_hint_name"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                >
+<RadioGroup
+    android:id="@+id/radioGender"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/gender_male"
+                    android:fontFamily="@font/special_elite"/>
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/gender_female"
+                    android:fontFamily="@font/special_elite"
+
+       /></RadioGroup>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnSignupClick"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/teal_700"
+                android:fontFamily="@font/special_elite"
+                android:text="@string/textView_title_signup"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:cornerRadius="200dp"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

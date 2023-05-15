@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HubFragment"
+    android:id="@+id/hubDash"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:background="@drawable/hub"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="10dp"
+        android:textStyle="bold"
+        android:text="HUB: "
+        android:fontFamily="@font/special_elite"
+        android:textSize="25sp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/cardview1"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView2"
+        android:layout_margin="10dp">
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="3"
+        android:layout_gravity="center_horizontal"
+        app:rowCount="3">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/quizHubId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_column="0"
+            app:layout_row="0">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_hub_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quiz"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hub_noteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_column="1"
+            app:layout_gravity="center"
+            app:layout_row="0">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/note" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Note"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/calculatorStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_column="2"
+            app:layout_row="0">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/calculator_icon" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calculator"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rolldice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_column="0"
+            app:layout_row="1">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/diceicon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Roll Dice"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bgChangeHub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_column="1"
+            app:layout_row="1">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/colorpalette" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:text="Background change" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hubLearn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_column="2"
+            app:layout_row="1">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_drive_file_rename_outline_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Learn"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hubFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_column="0"
+            app:layout_row="2">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/facebook" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="facebook"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hubTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_column="1"
+            app:layout_row="2">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icons8_twitter" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Twitter"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hubYoutube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_column="2"
+            app:layout_row="2">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icons8_youtube" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Youtube"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.gridlayout.widget.GridLayout>
+    </FrameLayout>
+</RelativeLayout>

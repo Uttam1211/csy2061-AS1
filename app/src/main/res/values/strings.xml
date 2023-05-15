@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">The Christmatic</string>
+    <string name="email_hint_name">Username </string>
+    <string name="password_hint_name">Password</string>
+    <string name="login_button_name">LogIn</string>
+    <string name="textView_title">LogIn</string>
+    <string name="email_hint">Email</string>
+    <string name="email_hint_repeat">Rewrite Email</string>
+    <string name="name_prompt">Name</string>
+    <string name="date">Date of Birth</string>
+    <string name="phone">Phone Number</string>
+    <string name="textView_title_signup">Sign Up</string>
+    <string name="register_text_prompt">Not yet Registered? Signup Now</string>
+    <string name="imageview_login_contentDes">School logo</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="forget">Forget Password?</string>
+    <string name="student_name">[Student Name]</string>
+    <string name="information">[ Information ]</string>
+    <string name="name">Name:</string>
+    <string name="names_s">[NAME]</string>
+    <string name="age">AGE:</string>
+    <string name="aged">[AGE]</string>
+    <string name="address">Address:</string>
+    <string name="address_s">[ADDRESS]</string>
+    <string name="hobbies">Hobbies:</string>
+    <string name="hobby">[HOBBIES]</string>
+    <string name="country">COUNTRY:</string>
+    <string name="countries">[COUNTRY]</string>
+    <string name="parent_s">Parent`s:</string>
+    <string name="parent_s_name">[PARENT`S NAME]</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="phone_num">[Phone Num]</string>
+    <string name="gender">Gender:</string>
+    <string name="gender_">[Gender]</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout_title">Logout</string>
+    <string name="logout_message">Are you sure you want to logout?</string>
+    <string name="logout_yes">Yes</string>
+    <string name="logout_no">No</string>
+    <string name="appame">NoteTaker</string>
+    <string name="title_hint">Title</string>
+    <string name="content_hint">Content</string>
+    <string name="save">Save</string>
+    <string name="add_note_fab_content_description">Add Note</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="apspame">Quiz</string>
+    <string name="select_subject">Select a subject:</string>
+    <string name="subject_science">Science</string>
+    <string name="subject_math">Math</string>
+    <string name="subject_physics">Physics</string>
+    <string name="subject_computer">Computer</string>
+    <string name="subject_chemistry">Chemistry</string>
+    <string name="quiz_finished">Quiz Finished</string>
+    <string name="score_message">You got %1$d out of %2$d questions correct (%3$.2f%%)</string>
+    <string name="ok">OK</string>
+    <string name="confirm_answer">Confirm</string>
+    <string name="next_question">Next Question</string>
+    <string name="learn_title">Learn</string>
+    <string name="view_log">View Log</string>
+    <string name="quiz_log_item">%s: %.1f</string>
+
+    <!-- QuizActivity strings -->
+    <string name="correct_answer">Correct!</string>
+    <string name="incorrect_answer">Incorrect.</string>
+    <string name="quiz_question">%s. %s</string>
+    <string name="confirm">Confirm</string>
+    <string name="radio_error">Please select an answer.</string>
+    <string name="no_quiz_data">No quiz data available.</string>
+
+</resources>
